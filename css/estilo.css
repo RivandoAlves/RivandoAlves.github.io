@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sem serifa;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: black;
+    padding: 3rem;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    height: 90vh;
+    background-image: linear-gradient(to bottom right, rgba(77,77,255,0.9), rgba(0,0,179.8)), url(../images/image\ header.png);
+    background-size: top;
+    /*clip-path:polygon(0 0, 0 100%, 100% 70vh, 100% 0);*/
+    position: relative;
+}
+.texto-header{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 30vh;
+    text-transform: uppercase;
+}
+.texto-header h1{
+    font-size: 4rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem white;
+    animation-name: entradaPorCima;
+    animation-duration: 1s;
+}
+.texto-header h2{
+    font-size: 3rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem white;
+    margin-bottom: 5rem;
+    animation-name: entradaPorBaixo;
+    animation-duration: 1s;
+}
+.texto-header a,
+.texto-header a:visited{
+text-decoration: none;
+color: black;
+background-color: white;
+border-radius: 5rem;
+padding: 1.5rem 3rem;
+display: inline-block;
+font-weight: 400;
+animation-name: entradaPelaEsquerda;
+animation-duration: 1s;
+}
+.texto-header a:hover{
+    transform: translateY(-.3rem);
+}
+.perfil{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+.perfil img{
+    height: 20rem;
+    border-radius: 20%;
+    animation-name: foto;
+    animation-duration: 1s;
+}
+@keyframes entradaPorCima {
+    0%{
+        opacity: 0;
+        transform: translateY(-10rem);
+
+    }
+    80%{
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+@keyframes entradaPorBaixo{
+    0%{
+        opacity: 0;
+        transform: translateY(0);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-1.5rem);
+
+    }
+}
+@keyframes foto{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+
+    }    
+}
+@keyframes entradaPelaEsquerda{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+main .sobreMim{
+    text-align: center;
+    padding-top: 7rem;
+    height: 60vh;
+}
+main .sobreMim h3{
+    font-size: 4rem;
+    text-shadow: 0.5rem 0.5rem 0.5rem white;
+    animation-name: deBaixoPraCima;
+    animation-duration: 1s;
+}
+main .sobreMim p{
+    text-align: center;
+    width: 80%;
+    padding-left: 20%;
+    height: 80%;
+}
+main .sobreMim h4{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+footer{
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgba(77,77,255,0.9), rgba(0,0,179.8)), url(../images/image\ header.png);
+    height: 10vh;
+    padding-top: 2rem;
+}
+@keyframes deBaixoPraCima{
+    0%{ 
+        opacity: 0;
+        transform: translateY(-2rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
